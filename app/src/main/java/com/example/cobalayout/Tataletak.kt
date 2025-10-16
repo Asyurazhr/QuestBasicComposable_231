@@ -109,5 +109,29 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
+    // Pakai R dari package app ini: com.example.cobalayout.R
+    val gambar = painterResource(id = com.example.cobalayout.R.drawable.notasibalok)
+
+    Column(
+        modifier = modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Col1_Row1_Komponen1")
+                Text(text = "Col1_Row1_Komponen2")
+                Text(text = "Col1_Row1_Komponen3")
+
+
 
 
