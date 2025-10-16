@@ -56,5 +56,17 @@ fun TataLetakBox(modifier: Modifier = Modifier) {
             .fillMaxWidth()
             .fillMaxHeight(),
         contentAlignment = Alignment.Center
-    ) {
+    ) {// Box akan menumpuk anak; kalau mau berderet, taruh Column/Row di dalam Box
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(6.dp)
+        ) {
+            Text(text = "Box 1")
+            Text(text = "Box 1-1")
+            Text(text = "Row 1")
+            Text(text = "Column 2")
+        }
+    }
+}
+
 
