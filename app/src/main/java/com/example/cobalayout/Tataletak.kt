@@ -141,6 +141,16 @@ fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
                 Text(text = "Col1_Row2_Komponen3")
             }
         }
+        Spacer(modifier = Modifier.height(10.dp))
+
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(300.dp)
+                .background(color = Color.Cyan),
+            contentAlignment = Alignment.Center
+        ) {
+
 
 
 
