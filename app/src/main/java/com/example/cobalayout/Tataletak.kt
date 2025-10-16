@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.style.TextAlign
 
 @Composable
 fun TataLetakColumn(modifier: Modifier = Modifier) {
@@ -156,6 +157,20 @@ fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Fit
             )
         }
+        Text(
+            text = "My Music",
+            fontSize = 50.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.Bold,
+            fontFamily = FontFamily.Cursive,
+            modifier = Modifier
+                .fillMaxWidth()
+                .align(Alignment.CenterHorizontally),
+        )
+
+    }
+}
+
 
 
 
