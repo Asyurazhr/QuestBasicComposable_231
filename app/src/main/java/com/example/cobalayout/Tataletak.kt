@@ -97,6 +97,17 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
         horizontalArrangement = Arrangement.SpaceEvenly,
         verticalAlignment = Alignment.Top
     ) {
+        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(text = "Komponen1Kolom1")
+            Text(text = "Komponen2Kolom1")
+            Text(text = "Komponen3Kolom1")
+        }
+        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(text = "Komponen1Kolom2")
+            Text(text = "Komponen2Kolom2")
+        }
+    }
+}
 
 
 
